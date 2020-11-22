@@ -1,10 +1,12 @@
 import React from 'react';
 
-function Cards(props){
-    console.log(props)
+function Cards({confirmed, recovered, deaths, lastUpdate}){
     return(
         <div>
-            {/* {props.data} */}
+        {confirmed}
+        {recovered}
+        {deaths}
+        {lastUpdate}
         </div>
     )
 }
